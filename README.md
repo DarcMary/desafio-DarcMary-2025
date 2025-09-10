@@ -1,6 +1,6 @@
 # Desafio Técnico - Abrigo de Animais
 
-_Solução para o desafio técnico de lógica de programação para o processo seletivo de [Nome da Empresa, se souber] de 2025._
+_Solução para o desafio técnico de lógica de programação para o processo seletivo da DB de 2025._
 
 Este projeto contém um algoritmo em JavaScript que determina a alocação de animais de um abrigo para duas pessoas candidatas, com base em um conjunto de regras predefinidas.
 
@@ -37,19 +37,19 @@ Siga os passos abaixo para configurar e executar o projeto em sua máquina local
 
 ### Pré-requisitos
 
--   [Node.js](https://nodejs.org/en/) (versão LTS recomendada)
+-   [Node.js](https://nodejs.org/en/) 
 -   [Git](https://git-scm.com/)
 
 ### Instalação
 
 1.  Clone o repositório:
     ```bash
-    git clone [https://github.com/seuUsername/desafio-seuUsername-2025.git](https://github.com/seuUsername/desafio-seuUsername-2025.git)
-    ```
+     git clone [https://github.com/DarcMary/desafio-DarcMary-2025.git](https://github.com/DarcMary/desafio-DarcMary-2025.git)
+     ```
 
 2.  Navegue até o diretório do projeto:
     ```bash
-    cd desafio-seuUsername-20afio-seuUsername-2025
+    cd desafio-DarcMary-20afio-DarcMary-2025
     ```
 
 3.  Instale as dependências:
@@ -101,7 +101,4 @@ Os testes irão validar as regras de negócio, os casos de erro e os exemplos fo
 
 ## 👤 Autor
 
-Desenvolvido por **[Seu Nome Completo]**.
-
--   **GitHub:** [@seuUsername](https://github.com/seuUsername)
--   **LinkedIn:** [Seu Perfil no LinkedIn](https://www.linkedin.com/in/seu-perfil/)
+Desenvolvido por **Darc Mary**.

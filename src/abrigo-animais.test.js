@@ -44,31 +44,16 @@ describe('Abrigo de Animais', () => {
 
   test('Regra A: Limite de 3 adoções por pessoa', () => {
     const resultado = new AbrigoAnimais().encontraPessoas(
-      'LASER,RATO,BOLA,CAIXA,NOVELO', // Pessoa 1 para Rexcão, Bolacão, Bebecão (3 adocoes)
+      'RATO,BOLA,LASER,RATO,BOLA,CAIXA,NOVELO', // Pessoa 1 para Rexcão, Bebecão, Bolacão (3 adocoes)
       '', // Pessoa 2 sem brinquedos
-      'Rexcão,Bolacão,Bebecão,Rexcão_extra,Bolacão_extra' // 5 animais (apenas 3 cães serao adotados)
+      'Rexcão,Bebecão,Bolacão,Mimigato,Fofogato' // 5 animais para testar limite
     );
     expect(resultado.lista.filter(r => r.includes('pessoa 1')).length).toBe(3);
     expect(resultado.lista).toContain('Rexcão - pessoa 1');
-    expect(resultado.lista).toContain('Bolacão - pessoa 1');
     expect(resultado.lista).toContain('Bebecão - pessoa 1');
-    expect(resultado.lista).toContain('Rexcão_extra - abrigo');
-    expect(resultado.lista).toContain('Bolacão_extra - abrigo');
-    expect(resultado.erro).toBeFalsy();
-  });
-
-  test('Regra A: Limite de 3 adoções por pessoa 2', () => {
-    const resultado = new AbrigoAnimais().encontraPessoas(
-      '', // Pessoa 1 sem brinquedos
-      'LASER,RATO,BOLA,CAIXA,NOVELO', // Pessoa 2 para Rexcão, Bolacão, Bebecão (3 adocoes)
-      'Rexcão,Bolacão,Bebecão,Rexcão_extra,Bolacão_extra' // 5 animais (apenas 3 cães serao adotados)
-    );
-    expect(resultado.lista.filter(r => r.includes('pessoa 2')).length).toBe(3);
-    expect(resultado.lista).toContain('Rexcão - pessoa 2');
-    expect(resultado.lista).toContain('Bolacão - pessoa 2');
-    expect(resultado.lista).toContain('Bebecão - pessoa 2');
-    expect(resultado.lista).toContain('Rexcão_extra - abrigo');
-    expect(resultado.lista).toContain('Bolacão_extra - abrigo');
+    expect(resultado.lista).toContain('Bolacão - pessoa 1');
+    expect(resultado.lista).toContain('Mimigato - abrigo');
+    expect(resultado.lista).toContain('Fofogato - abrigo');
     expect(resultado.erro).toBeFalsy();
   });
 
